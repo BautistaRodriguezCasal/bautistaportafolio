@@ -378,131 +378,40 @@ h3 {
   color: rgba(255, 250, 240, 0.82);
 }
 
-.work-visual {
+.work-shot {
   position: relative;
-  display: grid;
-  min-height: 13rem;
   margin: -0.25rem 0 1.6rem;
-  padding: 1rem;
   overflow: hidden;
-  align-content: space-between;
+  background: rgba(21, 21, 21, 0.08);
   border: 1px solid rgba(21, 21, 21, 0.12);
   border-radius: 1.1rem;
-  isolation: isolate;
+  aspect-ratio: 4 / 5;
 }
 
-.work-visual::before,
-.work-visual::after {
-  position: absolute;
-  content: "";
-  z-index: -1;
+.work-shot a,
+.work-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.visual-copy,
-.visual-brand {
-  position: relative;
-  z-index: 1;
-  width: max-content;
-  max-width: 100%;
-  padding: 0.35rem 0.55rem;
-  background: rgba(255, 250, 240, 0.78);
-  border-radius: 999px;
-  font-family: Archivo, system-ui, sans-serif;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.work-shot img {
+  object-fit: cover;
+  transition: transform 0.35s ease, filter 0.35s ease;
 }
 
-.visual-brand {
-  justify-self: end;
+.work-shot-landscape img {
+  object-fit: contain;
+  background: #181512;
 }
 
-.work-visual-villavicencio {
-  background:
-    linear-gradient(180deg, rgba(180, 211, 235, 0.92), rgba(244, 250, 255, 0.72)),
-    radial-gradient(circle at 50% 80%, #394a54 0 18%, transparent 19%);
+.work-card:hover .work-shot img {
+  filter: saturate(1.08) contrast(1.04);
+  transform: scale(1.035);
 }
 
-.work-visual-villavicencio::before {
-  right: 17%;
-  bottom: 0.7rem;
-  width: 5.2rem;
-  height: 8.9rem;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.85), rgba(86, 184, 223, 0.58));
-  border: 3px solid rgba(255, 255, 255, 0.66);
-  border-radius: 2.4rem 2.4rem 0.8rem 0.8rem;
-  box-shadow: 0 0 0 0.9rem rgba(124, 201, 237, 0.2);
-}
-
-.work-visual-villavicencio::after {
-  inset: auto 7% 0;
-  height: 5rem;
-  background: linear-gradient(135deg, transparent 0 26%, rgba(36, 49, 61, 0.75) 27% 50%, transparent 51%),
-    linear-gradient(45deg, transparent 0 32%, rgba(235, 244, 250, 0.9) 33% 60%, transparent 61%);
-  clip-path: polygon(0 100%, 22% 42%, 38% 72%, 56% 22%, 76% 65%, 100% 30%, 100% 100%);
-}
-
-.work-visual-mostaza {
-  background: linear-gradient(180deg, #5c9bd5 0 56%, #e4f3ff 57% 62%, #8a6a4f 63% 100%);
-}
-
-.work-visual-mostaza::before {
-  right: -12%;
-  bottom: 0.3rem;
-  width: 21rem;
-  height: 7.5rem;
-  background: linear-gradient(135deg, #d50909, #ff2a1a 54%, #9e0808);
-  clip-path: polygon(0 60%, 12% 28%, 29% 37%, 43% 16%, 58% 35%, 75% 20%, 100% 44%, 92% 100%, 6% 100%);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
-}
-
-.work-visual-mostaza::after {
-  right: 1rem;
-  bottom: 2.1rem;
-  width: 4.3rem;
-  height: 2.5rem;
-  background: rgba(255, 255, 255, 0.92);
-  clip-path: polygon(0 100%, 0 10%, 24% 10%, 50% 55%, 76% 10%, 100% 10%, 100% 100%, 72% 100%, 72% 48%, 50% 90%, 28% 48%, 28% 100%);
-}
-
-.work-visual-naranja {
-  background:
-    radial-gradient(circle at 50% 78%, rgba(255, 145, 0, 0.94), transparent 28%),
-    linear-gradient(180deg, rgba(46, 40, 35, 0.78), rgba(255, 145, 0, 0.52)),
-    linear-gradient(90deg, #312b27, #b99b79);
-}
-
-.work-visual-naranja::before {
-  left: 50%;
-  bottom: 1.2rem;
-  width: 8.6rem;
-  height: 5.9rem;
-  background: #ff9800;
-  border-radius: 50% 50% 18% 18%;
-  clip-path: polygon(5% 12%, 42% 0, 100% 8%, 86% 100%, 14% 100%);
-  transform: translateX(-50%);
-}
-
-.work-visual-naranja::after {
-  top: 3.9rem;
-  left: 50%;
-  width: 6.4rem;
-  height: 3.2rem;
-  background:
-    radial-gradient(circle at 24% 50%, #ff9800 0 43%, transparent 45%),
-    radial-gradient(circle at 76% 50%, #ff9800 0 43%, transparent 45%);
-  filter: drop-shadow(0 0 0.35rem rgba(255, 255, 255, 0.3));
-  transform: translateX(-50%);
-}
-
-.work-card.accent .work-visual {
+.work-card.accent .work-shot {
   border-color: rgba(255, 250, 240, 0.22);
-}
-
-.work-card.accent .visual-copy,
-.work-card.accent .visual-brand {
-  color: var(--ink);
 }
 
 .card-meta {

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Villavicencio - Agua fresca</title>
+  <desc id="desc">Publicidad gráfica de Villavicencio con una botella congelada sobre una montaña nevada y el titular No digas frío hasta no ver pingüinos.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#a9bbcf" offset="0"/>
+      <stop stop-color="#c8d8e7" offset=".55"/>
+      <stop stop-color="#eef5fb" offset="1"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#e9fbff" offset="0"/>
+      <stop stop-color="#89cde6" offset=".48"/>
+      <stop stop-color="#f8ffff" offset="1"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#sky)"/>
+  <text x="540" y="165" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-size="48" fill="#111">No digas frío hasta no ver pingüinos.</text>
+  <g fill="#ff171c" font-family="Georgia, serif" font-weight="700">
+    <text x="930" y="155" text-anchor="middle" font-size="38">Villavicencio</text>
+    <path d="M928 98h38c18 36 18 69 0 102h-38c20-34 20-67 0-102Zm-58 0h38l38 102h-38L870 98Z"/>
+  </g>
+  <g transform="translate(0 745)">
+    <path d="M0 605V355l92-72 80 38 83-120 78 63 93-162 106 238 87-174 106 128 96-83 97 141 162-92v345H0Z" fill="#dce9f1"/>
+    <path d="M0 605V418l110-91 69 65 83-155 78 88 82-154 77 157 90-208 93 199 95-97 98 132 205-89v340H0Z" fill="#41566b" opacity=".92"/>
+    <path d="M60 605V460l86-73 85 54 91-139 79 82 103-181 82 173 80-112 75 87 73-42 71 73 195-66v289H60Z" fill="#f4fbff" opacity=".85"/>
+    <path d="M350 605V445l83-107 76 94 69-151 103 231 85-78 69 63 245-99v207H350Z" fill="#27394b" opacity=".75"/>
+  </g>
+  <ellipse cx="535" cy="970" rx="190" ry="56" fill="#101820" opacity=".22" filter="url(#soft)"/>
+  <g transform="translate(418 230)">
+    <path d="M78 120c35-42 91-60 167-77-17 39-50 76-91 111v520c0 50-32 82-75 82S4 724 4 674V206c0-40 24-70 74-86Z" fill="url(#ice)" opacity=".88"/>
+    <path d="M92 42c44 2 90 15 147 28-38 17-72 43-98 80-30-12-61-23-93-32 6-29 21-55 44-76Z" fill="#65b6da" opacity=".75"/>
+    <path d="M44 360h126v138H44z" fill="#fff" opacity=".72"/>
+    <path d="M44 387h126v20H44z" fill="#ea1d25" opacity=".75"/>
+    <path d="M44 432h126v25H44z" fill="#168745" opacity=".75"/>
+    <path d="M18 235c-46 71-64 169-31 309 38-93 72-188 70-291l-39-18Z" fill="#6bc3e4" opacity=".6"/>
+    <path d="M28 155c56-40 112-43 168-18" fill="none" stroke="#f9ffff" stroke-width="14" opacity=".68"/>
+    <path d="M28 682c72 26 141 24 207-2" fill="none" stroke="#f9ffff" stroke-width="18" opacity=".7"/>
+  </g>
+</svg>
