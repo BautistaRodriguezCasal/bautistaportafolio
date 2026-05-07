@@ -347,16 +347,12 @@ h3 {
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .work-card {
-  display: flex;
-  min-height: 32rem;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: clamp(1.25rem, 3vw, 2rem);
-  background: rgba(255, 250, 240, 0.84);
+  overflow: hidden;
+  background: rgba(255, 250, 240, 0.9);
   border: 1px solid var(--line);
   border-radius: 1.5rem;
   box-shadow: 0 12px 40px rgba(21, 21, 21, 0.07);
@@ -364,27 +360,16 @@ h3 {
 }
 
 .work-card:hover {
-  transform: translateY(-0.45rem) rotate(-0.4deg);
+  transform: translateY(-0.45rem);
   box-shadow: var(--shadow);
-}
-
-.work-card.accent {
-  background: var(--accent);
-  color: var(--bg);
-}
-
-.work-card.accent .card-meta,
-.work-card.accent p {
-  color: rgba(255, 250, 240, 0.82);
 }
 
 .work-shot {
   position: relative;
-  margin: -0.25rem 0 1.6rem;
+  margin: 0;
   overflow: hidden;
   background: rgba(21, 21, 21, 0.08);
-  border: 1px solid rgba(21, 21, 21, 0.12);
-  border-radius: 1.1rem;
+  border-bottom: 1px solid var(--line);
   aspect-ratio: 4 / 5;
 }
 
@@ -407,33 +392,33 @@ h3 {
 
 .work-card:hover .work-shot img {
   filter: saturate(1.08) contrast(1.04);
-  transform: scale(1.035);
+  transform: scale(1.03);
 }
 
-.work-card.accent .work-shot {
-  border-color: rgba(255, 250, 240, 0.22);
+.work-card-body {
+  padding: clamp(1.2rem, 2.5vw, 1.7rem);
 }
 
 .card-meta {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   color: var(--muted);
 }
 
-.work-card p,
-.work-card li {
+.work-card p {
   color: var(--muted);
 }
 
-.work-card ul {
-  padding-left: 1.1rem;
-  margin: 1.2rem 0 0;
+.work-card .tools {
+  margin: 1.1rem 0 0;
+  color: var(--ink);
+  font-weight: 700;
 }
 
-.work-card.accent li {
-  color: rgba(255, 250, 240, 0.9);
+.work-card .tools strong {
+  color: var(--accent);
 }
 
 .contact-links {
@@ -539,9 +524,6 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .work-card {
-    min-height: 25rem;
-  }
 
   .contact-links a,
   .site-footer {
