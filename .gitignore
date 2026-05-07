@@ -1,0 +1,5 @@
+# User-provided portfolio artwork images are intentionally not committed.
+assets/trabajos/*.png
+assets/trabajos/*.jpg
+assets/trabajos/*.jpeg
+assets/trabajos/*.webp
