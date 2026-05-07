@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Mostaza - La más grande</title>
+  <desc id="desc">Publicidad gráfica de Mostaza con una hamburguesa monumental roja sobre la cordillera y el texto Mostaza. Envolvemos grandeza.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#5b9bd6" offset="0"/>
+      <stop stop-color="#5b9bd6" offset=".55"/>
+      <stop stop-color="#d9efff" offset=".75"/>
+      <stop stop-color="#f3f0e8" offset="1"/>
+    </linearGradient>
+    <linearGradient id="wrap" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#b30707" offset="0"/>
+      <stop stop-color="#ff1b12" offset=".45"/>
+      <stop stop-color="#8f0606" offset="1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#sky)"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#fff" font-weight="700" text-anchor="middle">
+    <text x="540" y="422" font-size="46">Mostaza. Envolvemos grandeza</text>
+    <text x="540" y="505" font-size="36">La más grande de América</text>
+  </g>
+  <g transform="translate(982 36)" fill="#050505" font-family="Georgia, serif" text-anchor="middle">
+    <text x="0" y="38" font-size="48" font-weight="700">M</text>
+    <text x="0" y="58" font-size="14" font-family="Arial, sans-serif">Mostaza</text>
+  </g>
+  <g transform="translate(0 860)">
+    <path d="M0 490V250l95-71 82 32 78-92 78 55 92-130 94 180 83-126 78 91 71-68 77 99 87-72 145 102v240H0Z" fill="#6c655c"/>
+    <path d="M0 490V310l113-94 83 68 91-137 75 92 93-153 75 128 80-84 84 80 87-62 84 90 195-86v338H0Z" fill="#c7b6a2" opacity=".72"/>
+  </g>
+  <g transform="translate(-30 720)">
+    <path d="M15 370c64-72 113-119 188-101 73-109 167-156 280-100 80-85 181-96 282-41 75-63 156-44 236 53 63 0 106 36 135 109-15 155-49 251-104 288-94 6-173-12-239-55-94 37-183 34-267-9-103 57-201 54-293-8-78 31-151 17-220-42-23-42-23-74 2-94Z" fill="url(#wrap)"/>
+    <path d="M60 386c210-64 410-98 617-210M188 520c198-111 396-192 588-246M518 570c129-134 250-231 362-294" fill="none" stroke="#ff5a45" stroke-width="16" opacity=".36"/>
+    <path d="M462 314h73l45 91 45-91h73v170h-65v-80l-42 80h-24l-42-80v80h-63V314Z" fill="#fff"/>
+    <text x="580" y="545" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="800">MOSTAZA</text>
+  </g>
+</svg>
