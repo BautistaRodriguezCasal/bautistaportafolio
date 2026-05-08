@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768" role="img" aria-labelledby="title desc">
+  <title id="title">Naranja</title>
+  <desc id="desc">Publicidad gráfica que vende el color naranja como el mejor color con la frase Tu otra mitad es Naranja.</desc>
+  <defs>
+    <linearGradient id="warm" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#1d1b18" offset="0"/>
+      <stop stop-color="#7b6753" offset=".55"/>
+      <stop stop-color="#ff9800" offset="1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="85%" r="60%">
+      <stop stop-color="#ff9800" stop-opacity=".95" offset="0"/>
+      <stop stop-color="#ff9800" stop-opacity="0" offset="1"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="768" fill="#6d6258"/>
+  <rect width="1024" height="768" fill="url(#warm)" opacity=".82"/>
+  <rect width="1024" height="768" fill="url(#glow)"/>
+  <g opacity=".45" stroke="#1c1713" stroke-width="12" fill="none" stroke-linecap="round">
+    <path d="M520 30c-12 119-10 222 6 310M518 155c-120-86-248-112-388-78M530 160c126-88 246-111 360-70M518 253c-146-16-276 11-390 82M530 264c132-10 245 15 338 75"/>
+  </g>
+  <text x="512" y="85" text-anchor="middle" fill="#ffa32a" font-family="Georgia, serif" font-size="60" font-style="italic">Tu otra mitad es Naranja</text>
+  <g transform="translate(324 360)">
+    <path d="M30 12c79-20 159-12 242 24 73 31 112 91 115 180v150H58v-78C11 226-8 166 2 108c5-31 15-63 28-96Z" fill="#ff9800"/>
+    <path d="M135 120l112 44-80 84Z" fill="#8a4d00" opacity=".8"/>
+  </g>
+  <g transform="translate(388 286)">
+    <path d="M0 98c-8-53 20-92 72-100 47 5 76 37 70 92-53 6-100 9-142 8Z" fill="#ff8d00"/>
+    <path d="M184 92c-12-49 11-82 61-89 47 2 73 30 75 79-45 13-90 16-136 10Z" fill="#ff8d00"/>
+    <path d="M30 16c31 24 57 50 77 80M218 17c29 23 52 48 69 75" stroke="#fff1d6" stroke-width="8" fill="none" opacity=".9"/>
+  </g>
+</svg>
